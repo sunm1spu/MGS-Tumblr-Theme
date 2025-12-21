@@ -55,7 +55,7 @@ body {
     
    
 
-      -webkit-animation: scanline 0.1s linear 1s infinite;
+      -webkit-animation: scanline 0.15s linear 1s infinite;
       /* -webkit-animation: flicker 0.08s linear 1s infinite; */
       z-index: 1;
       pointer-events: none;
