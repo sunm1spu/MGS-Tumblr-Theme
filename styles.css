@@ -12,6 +12,11 @@ body {
 .flicker::after{
 
 } */
+
+.post {
+    
+}
+
 #test{
     color: gray;
     font-size: 250px;
@@ -27,15 +32,30 @@ body {
     bottom: 0;
     z-index: -2;
     
+    background-image: conic-gradient(black 45%, rgb(16, 81, 7));
+    
+    
+    
     background-image: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0) 0%, /* Transparent white at the top of the overlay */
         rgb(0, 0, 0) 100% /* Opaque white at the bottom */
     ),radial-gradient(black 45%, rgb(16, 81, 7));
-    background-size: 100% 50%;
+    
+    
     
     
 }
+
+/**
+ background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%, /* Transparent white at the top of the overlay 
+        rgb(0, 0, 0) 100% /* Opaque white at the bottom 
+    ),radial-gradient(black 45%, rgb(16, 81, 7));
+    
+    background-size: 100% 50%;
+**/
 
 #page-color-base {
     position:fixed; 
@@ -51,6 +71,35 @@ body {
     
 }
 
+
+.crt-background-static {
+    /*
+        First gradient is vertical lines, second is horizontal
+
+        Base CRT effect is achieved through semi opaque cells created
+        by the rectangular gradient grid being overlayd on top of a
+        vignette and base color gradient.
+    */
+    position: fixed;
+    top: 33.3vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      repeating-linear-gradient(to right,
+                                    rgba(50,0,0,0.2) 0px,
+                                    rgba(0,0,0,0) 8px,
+                                    rgba(50,0,0,0.2) 16px
+                                ),
+    repeating-linear-gradient(to bottom,
+                                    rgba(0,0,0,0.2) 0px,
+                                    rgba(0,0,0,0) 5px,
+                                    rgba(20,0,0,0.2) 10px
+                                );
+      /* -webkit-animation: flicker 0.08s linear 1s infinite; */
+      z-index: 1;
+      pointer-events: none;
+}
 
 #crt-background {
     /*
