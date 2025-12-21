@@ -11,6 +11,13 @@ body {
      */
 }
 
+#searchbar {
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    padding: 2vh;
+}
+
 .post-tag {
     display:flex;
     justify-content: left;
