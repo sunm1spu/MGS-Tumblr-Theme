@@ -9,6 +9,7 @@
 body {
     /* background-image: linear-gradient(black 25%, rgb(16, 81, 7));
      */
+     text-shadow: 0 0 5px hsl(149, 79%, 59%);
 }
 
 #profile-pic {
@@ -31,6 +32,8 @@ body {
     align-items: flex-end;
     width: 80%;
     height: 5%;
+
+    text-shadow: 0 0 5px hsl(149, 79%, 59%);
 
 }
 
