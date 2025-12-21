@@ -11,6 +11,13 @@ body {
      */
 }
 
+#profile-pic {
+    position: relative;
+    height:40vh;
+    width: auto;
+    z-index: 2;
+}
+
 #searchbar {
     color: white;
     text-align: center;
