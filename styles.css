@@ -4,6 +4,31 @@
 */
 
 body {
+    
+    }
+
+/* 
+.flicker::after{
+
+} */
+#test{
+    color: gray;
+    font-size: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#crt-color-base {
+    position:fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: radial-gradient(black 25%, rgb(16, 81, 7));
+}
+
+#crt-background {
     /*
         First gradient is vertical lines, second is horizontal
 
@@ -11,6 +36,11 @@ body {
         by the rectangular gradient grid being overlayd on top of a
         vignette and base color gradient.
     */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image:
       repeating-linear-gradient(to right,
                                     rgba(50,0,0,0.2) 0px,
@@ -19,21 +49,16 @@ body {
                                 ),
     repeating-linear-gradient(to bottom,
                                     rgba(0,0,0,0.2) 0px,
-                                    rgba(0,0,0,0) 10px,
-                                    rgba(20,0,0,0.2) 20px
-                                ),
-    
-    radial-gradient(black 25%, rgb(16, 81, 7));
+                                    rgba(0,0,0,0) 5px,
+                                    rgba(20,0,0,0.2) 10px
+                                );
     
    
 
-      -webkit-animation: flicker 0.08s linear 1s infinite;
-    }
-
-/* 
-.flicker::after{
-
-} */
+      -webkit-animation: scanline 0.08s linear 1s infinite;
+      /* -webkit-animation: flicker 0.08s linear 1s infinite; */
+      z-index: 1;
+}
 
 @-webkit-keyframes flicker {
      0% {
@@ -100,4 +125,11 @@ body {
     radial-gradient(black 10%, rgb(16, 81, 7))
     }
     
+}
+
+@-webkit-keyframes scanline {
+    0% {background-position: 0px 0px}
+  30% {background-position: 0px 10px}
+  60% {background-position: 0px 20px}
+  100% {background-position: 0px 10px}
 }
