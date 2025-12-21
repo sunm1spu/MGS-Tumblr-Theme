@@ -2,6 +2,9 @@
     Stylesheet for MGS Tumblr theme
 
 */
+:root {
+    --animation-stop: 33.33vh;
+}
 
 body {
     /* background-image: linear-gradient(black 25%, rgb(16, 81, 7));
@@ -89,7 +92,7 @@ body {
         vignette and base color gradient.
     */
     position: fixed;
-    top: 33.3vh;
+    top: var(--animation-stop);
     left: 0;
     right: 0;
     bottom: 0;
@@ -122,7 +125,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 33.33vh;
+    height: var(--animation-stop);
     background-image:
       repeating-linear-gradient(to right,
                                     rgba(50,0,0,0.2) 0px,
