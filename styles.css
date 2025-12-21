@@ -55,9 +55,10 @@ body {
     
    
 
-      -webkit-animation: scanline 0.08s linear 1s infinite;
+      -webkit-animation: scanline 0.1s linear 1s infinite;
       /* -webkit-animation: flicker 0.08s linear 1s infinite; */
       z-index: 1;
+      pointer-events: none;
 }
 
 @-webkit-keyframes flicker {
@@ -129,7 +130,7 @@ body {
 
 @-webkit-keyframes scanline {
     0% {background-position: 0px 0px}
-  30% {background-position: 0px 10px}
-  60% {background-position: 0px 20px}
+  30% {background-position: 0px 2px}
+  60% {background-position: 0px 2px}
   100% {background-position: 0px 10px}
 }
