@@ -4,8 +4,9 @@
 */
 
 body {
-    
-    }
+    /* background-image: linear-gradient(black 25%, rgb(16, 81, 7));
+     */
+}
 
 /* 
 .flicker::after{
@@ -24,9 +25,27 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
-    background-image: radial-gradient(black 25%, rgb(16, 81, 7));
+    z-index: -2;
+    
+    background-image: radial-gradient(black 45%, rgb(16, 81, 7));
+    background-size: 100% 50%;
+    
 }
+
+#page-color-base {
+    position:fixed; 
+    top: 33.33vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    
+    background-image: linear-gradient(black 25%, black);
+    background-size: 100% 50%;
+    
+}
+
 
 #crt-background {
     /*
@@ -41,6 +60,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    height: 33.33vh;
     background-image:
       repeating-linear-gradient(to right,
                                     rgba(50,0,0,0.2) 0px,
