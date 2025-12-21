@@ -17,6 +17,14 @@ body {
     
 }
 
+#mgs-logo{
+    display:flex;
+    margin: auto;
+    justify-content: space-around;
+    height:17vh;
+
+}
+
 #test{
     color: gray;
     font-size: 250px;
