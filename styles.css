@@ -25,7 +25,7 @@ body {
   background-image: url('assets/Perlin_noise_example.png');
   background-size: cover;
   /* Add other styles, e.g., a background color */
-  filter: blur(10px);
+  filter: blur(15px);
   opacity: 0.1;
   z-index: 5;
   height: 100vh;
