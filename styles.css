@@ -21,14 +21,31 @@ body {
     
 }
 
+#noise-map {
+  background-image: url('assets/Perlin_noise_example.png');
+  background-size: cover;
+  /* Add other styles, e.g., a background color */
+  filter: blur(10px);
+  opacity: 0.1;
+  z-index: 5;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    
+}
+
 #profile-pic {
     position: relative;
     height:40vh;
     width: auto;
     z-index: 2;
     transform: scale(1,0);
-        
-       -webkit-animation: turnon 0.5s linear 0s forwards;
+    
+    /* Loading animation based on codec animation */
+    -webkit-animation: turnon 0.5s linear 0s forwards;
 }
 
 #searchbar {
@@ -119,11 +136,17 @@ body {
     
     
     
+    /* background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%, 
+        rgb(0, 0, 0) 100% 
+    ),radial-gradient(black , rgb(29, 68, 24)); */
+
     background-image: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0) 0%, /* Transparent white at the top of the overlay */
         rgb(0, 0, 0) 100% /* Opaque white at the bottom */
-    ),radial-gradient(black 45%, rgb(29, 68, 24));
+    ),radial-gradient(rgb(29, 68, 24), rgb(29, 68, 24));
     
     
     
@@ -298,15 +321,19 @@ body {
         align-self:center;
         /* width: 100vw;
         height:2px; */
-        background: white;
-        filter: contrast(100%) saturate(100%);
     }
-    100% {
+    99% {
         transform: scale(1, 1);
         align-self:center;
+        
+        filter: contrast(50%) saturate(200%);
         /* width: 0vw;
         height: 0px; */
-        background: white;
+    }
 
+    100%{
+        transform: scale(1, 1);
+        align-self:center;
+        filter: contrast(100%) saturate(100%);
     }
 }
