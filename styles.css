@@ -22,18 +22,20 @@ body {
 }
 
 #noise-map {
-  background-image: url('assets/Perlin_noise_example.png');
+  background-image: url('assets/tv-static.jpg');
   background-size: cover;
   /* Add other styles, e.g., a background color */
-  filter: blur(15px);
-  opacity: 0.1;
-  z-index: 5;
+  /* filter: blur(15px); */
+  opacity: 0.3;
+  z-index: 1;
   height: 100vh;
   position: fixed;
   top:0;
   left: 0;
   right: 0;
   bottom: 0;
+  filter:brightness(120%);
+  mix-blend-mode: multiply;
     
 }
 
