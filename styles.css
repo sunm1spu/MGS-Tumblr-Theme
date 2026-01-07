@@ -27,30 +27,39 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 200vh;
+    
 
 }
 
 #noise-map {
-  background-image: url('assets/tv-static.jpg');
-  background-size: cover;
-  /* Add other styles, e.g., a background color */
-  /* filter: blur(15px); */
-  opacity: 0.3;
-  z-index: 1;
-  height: 100vh;
-  position: fixed;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  filter:brightness(120%);
-  mix-blend-mode: multiply;
+    pointer-events: none;
+    background-image: url('assets/tv-static.jpg');
+    background-size: cover;
+    /* Add other styles, e.g., a background color */
+    /* filter: blur(15px); */
+    opacity: 0.3;
+    z-index: 1;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter:brightness(120%);
+    mix-blend-mode: multiply;
 
-  /* -webkit-animation: scanline 0.15s linear 1s infinite; */
+    /* -webkit-animation: scanline 0.15s linear 1s infinite; */
     
 }
 
+
+
+
 #profile-sidebar-column {
+    position: sticky;
+    top:5vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -94,6 +103,10 @@ body {
     text-align: center;
     font-size: 3vh;
     padding: 2vh;
+}
+
+#post-sidebar {
+    /* overflow-y: auto; */
 }
 
 .post-tag {
