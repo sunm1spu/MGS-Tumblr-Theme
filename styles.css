@@ -62,13 +62,15 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
+    z-index: 3;
 }
 
 #profile-pic {
     position: relative;
     height:25vh;
     width: auto;
-    z-index: 2;
+    /* z-index: 3; */
+    /* this is so sad but it isn't possible */
     transform: scale(1,0);
     
     /* Loading animation based on codec animation */
@@ -106,7 +108,11 @@ body {
 }
 
 #post-sidebar {
-    /* overflow-y: auto; */
+    overflow-y: auto;
+}
+
+#post-sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .post-tag {
