@@ -95,14 +95,15 @@ body {
 
 .rect-button:hover .rect-button-inner{
     box-shadow: 
-        0.2vh 0.2vh rgb(255, 252, 49),
-        0.4vh 0.4vh rgb(255, 212, 212),
-        -0.2vh -0.2vh  rgb(141, 219, 255),
-        -0.3vh -0.3vh  rgb(154, 184, 255);
+        0.2vh 0vh rgb(255, 252, 49),
+        0.4vh 0vh rgb(255, 212, 212),
+        -0.2vh -0vh  rgb(141, 219, 255),
+        -0.4vh -0vh  rgb(154, 184, 255);
 
-    background-color: rgb(252, 252, 251);
+        background-color: rgb(198 244 138);
+    /* background-color: rgb(252, 252, 251); */
     z-index: 3;
-    filter: drop-shadow(0 0 15px rgb(255, 255, 255));
+    /* filter: drop-shadow(0 0 15px rgb(255, 255, 255)); */
 }
 /* 
 .rect-button-inner::before{
