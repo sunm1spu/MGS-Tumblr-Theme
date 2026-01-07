@@ -13,12 +13,21 @@ body {
      
      /* text-shadow: 0 0 5px hsl(149, 91%, 48%); */
     /* -webkit-animation: turnoff 0.5s linear 1s; */
+}
 
-
+#crt-border {
+     box-shadow: 0 0 150px 100px rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+    position: fixed;
+    top:0;
+    border-top: 5%;
 }
 
 #main-content {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 #noise-map {
@@ -36,6 +45,8 @@ body {
   bottom: 0;
   filter:brightness(120%);
   mix-blend-mode: multiply;
+
+  /* -webkit-animation: scanline 0.15s linear 1s infinite; */
     
 }
 
