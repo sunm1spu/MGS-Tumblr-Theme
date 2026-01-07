@@ -50,15 +50,43 @@ body {
     
 }
 
+#profile-sidebar-column {
+    display: flex;
+    flex-direction: column;
+}
+
 #profile-pic {
     position: relative;
-    height:40vh;
+    height:25vh;
     width: auto;
     z-index: 2;
     transform: scale(1,0);
     
     /* Loading animation based on codec animation */
     -webkit-animation: turnon 0.5s linear 0s forwards;
+}
+
+#pfp-codec-container {
+    display: flex;
+    justify-content:row;
+}
+.rect-button {
+    background-color: rgb(12 65 32);
+    height: 5vh;
+    width: 15vh;
+    margin-bottom: 5vh;
+}
+
+#buttons-about-me-container {
+    display: flex;
+    justify-content:row;
+}
+
+.rect-button-label {
+    color: white;
+    position: relative;
+    top: 5vh;
+    text-align: right;
 }
 
 #searchbar {
