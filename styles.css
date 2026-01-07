@@ -77,6 +77,10 @@ body {
     -webkit-animation: turnon 0.5s linear 0s forwards;
 }
 
+#codec-memory {
+    height: 25vh;
+}
+
 #pfp-codec-container {
     display: flex;
     justify-content:row;
@@ -103,7 +107,7 @@ body {
         background-color: rgb(198 244 138);
     /* background-color: rgb(252, 252, 251); */
     z-index: 3;
-    /* filter: drop-shadow(0 0 15px rgb(255, 255, 255)); */ */
+    /* filter: drop-shadow(0 0 15px rgb(255, 255, 255)); */ 
 }
 /* 
 .rect-button-inner::before{
@@ -174,6 +178,7 @@ body {
 
 #post-sidebar {
     overflow-y: auto;
+    position: relative;
 }
 
 #post-sidebar::-webkit-scrollbar {
@@ -186,9 +191,15 @@ body {
     align-items: flex-end;
     width: 80%;
     height: 5%;
-
+    position: absolute;
     text-shadow: 0 0 5px hsl(149, 79%, 59%);
 
+    z-index: 4;
+
+}
+
+.post-text {
+    z-index: 5;
 }
 
 .post-rect {
@@ -207,15 +218,16 @@ body {
 
 
 .post-body {
-    width: 100%;
-    height: 30%;
+    position: absolute;
+    top: 5%;
+    padding-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vh;
     overflow: hidden;
     display:flex;
     justify-content: flex-end;
     flex-direction:column;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .post-rect, .post-body, .post-tri{
@@ -230,7 +242,8 @@ body {
 } */
 
 .post {
-    height:80vh;
+    position: relative;
+    height:30vh;
     width:50vh
 }
 
