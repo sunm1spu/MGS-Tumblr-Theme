@@ -255,7 +255,8 @@ img .post {
 .post {
     position: relative;
     height:30vh;
-    width:50vh
+    width:50vh;
+    overflow-y: hidden;
 }
 
 #mgs-logo{
