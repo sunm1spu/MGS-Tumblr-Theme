@@ -277,8 +277,10 @@ body {
 
 .post-rect {
     height: 81%;
-    min-width: 16vw;
+    min-width: 10vw;
     width: auto;
+    padding-right:1vw;
+
     font-size: 2vh;
 }
 
