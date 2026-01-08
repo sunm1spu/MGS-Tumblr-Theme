@@ -247,11 +247,12 @@ body {
     display:flex;
     justify-content: left;
     align-items: flex-end;
-    width: 80%;
-    height: 5%;
     position: relative;
     text-shadow: 0 0 5px hsl(149, 79%, 59%);
 
+    min-width: 80%;
+    width: auto;
+    height: 4vh;
 }
 
 .post-text {
