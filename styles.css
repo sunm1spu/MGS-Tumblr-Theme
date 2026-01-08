@@ -205,6 +205,12 @@ body {
     cursor: pointer;
 }
 
+.interaction-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
 #post-sidebar {
     margin-left: 10vh;
     overflow-y: auto;

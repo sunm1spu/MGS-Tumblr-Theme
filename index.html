@@ -70,9 +70,15 @@
                         {/block:Title}
                         {Body}
                     </div>
+                
+                <div class="interaction-buttons">
+                    {LikeButton}{ReblogButton}
+                </div>
+                
                 </div>
             </div>
             {/block:Text}
+
             {block:Photo}
             <div class="post">
                 <!-- check out tumblr api for loading interactions -->
@@ -89,6 +95,9 @@
                     <div class="post-img">
                         {Body}
                     </div>
+                    <div class="interaction-buttons">
+                    {LikeButton}{ReblogButton}
+                </div>
                 </div>
             </div>
             {/block:Photo}
@@ -109,6 +118,9 @@
                     <div class="photoset">
                         {Photoset}
                     </div>
+                    <div class="interaction-buttons">
+                    {LikeButton}{ReblogButton}
+                </div>
                     <!-- Original Post -->
                 </div>
             </div>
