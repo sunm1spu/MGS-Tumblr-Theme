@@ -173,6 +173,32 @@ body {
     text-align: center;
     font-size: 3vh;
     padding: 2vh;
+    margin-bottom: 3vh;
+}
+
+#searchbar-textbox {
+    
+    position: relative;
+    background-color: rgb(29, 68, 24);
+    box-shadow: 0 0 0 1vh black;
+    border: none;
+
+    height: 3vh;
+    width: 25vw;
+    z-index: 5;
+}
+
+#submit-button {
+    position: absolute;
+    background-color: black;
+    color:white;
+    border: none;
+
+    height: 3vh;
+    width: 15vh;
+    top: 6vh;
+    left: 40vw;
+    z-index: 6;
 }
 
 #post-sidebar {

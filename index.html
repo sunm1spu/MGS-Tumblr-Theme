@@ -1,134 +1,128 @@
 <!DOCTYPE html>
 <!-- 
-   MGS Inspired Tumblr Theme 
-   -->
+    MGS Inspired Tumblr Theme 
+    -->
 <head>
-   <meta charset="UTF-8" />
-   <!-- <link rel="stylesheet" href="https://sunm1spu.github.io/MGS-Tumblr-Theme/styles.css" /> -->
-   
-   <link rel="stylesheet" href="styles.css" />
-   <script src="main.js"></script>
-   <title>MGS Sideblog</title>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="https://sunm1spu.github.io/MGS-Tumblr-Theme/styles.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+    <title>MGS Sideblog</title>
 </head>
-
-   <body>
-   <div id="searchbar">SEARCHBAR PLACEHOLDER</div>
-   <div id="mgs-logo"><img src="https://sunm1spu.github.io/MGS-Tumblr-Theme/assets/mgslogo.png"></div>
-   <div id="main-content">
-      <div id="profile-sidebar-column">
-         <div id="pfp-codec-container">
-            <img id="profile-pic" src="https://sunm1spu.github.io/MGS-Tumblr-Theme/assets/pfp_animation_gif_FINAL01RESIZE.gif">
-            <img id="codec-memory" src="https://sunm1spu.github.io/MGS-Tumblr-Theme/assets/codec-placeholder.png">
-         </div>
-         <div id="memory-textbox-container">
-            <p>MEMORY TEXTBOX PLACEHOLDER </p>
-         </div>
-         <div id="buttons-about-me-container">
-            <div id="buttons-container">
-               <div class="rect-button">
-                  <div class="rect-button-label">ABOUT</div>
-                  <div class="rect-button-inner"></div>
-                  <div class=""></div>
-               </div>
-               <div class="rect-button">
-                  <div class="rect-button-label">TAGS</div>
-                  <div class="rect-button-inner"></div>
-                  <div class=""></div>
-               </div>
-               <div class="rect-button">
-                  <div class="rect-button-label">REQUESTS</div>
-                  <div class="rect-button-inner"></div>
-                  <div class=""></div>
-               </div>
-               <div class="rect-button">
-                  <div class="rect-button-label">FAQ</div>
-                  <div class="rect-button-inner"></div>
-                  <div class=""></div>
-               </div>
+<body>
+    <div id="searchbar">
+        <form action="/search" method="get">
+            <input id="submit-button" type="submit" value="SEARCH"/>
+            <input id="searchbar-textbox" type="text" name="q" value="{SearchQuery}"/>
+            
+        </form>
+    </div>
+    <div id="mgs-logo"><img src="https://sunm1spu.github.io/MGS-Tumblr-Theme/assets/mgslogo.png"></div>
+    <div id="main-content">
+        <div id="profile-sidebar-column">
+            <div id="pfp-codec-container">
+                <img id="profile-pic" src="https://sunm1spu.github.io/MGS-Tumblr-Theme/assets/pfp_animation_gif_FINAL01RESIZE.gif">
+                <img id="codec-memory" src="https://sunm1spu.github.io/MGS-Tumblr-Theme/assets/codec-placeholder.png">
             </div>
-            <div id="about-me-container">
+            <div id="memory-textbox-container">
+                <p>MEMORY TEXTBOX PLACEHOLDER </p>
             </div>
-         </div>
-      </div>
-      <div id="post-sidebar">
-        {block:Posts}
-
-        {block:Text}
-        <div class="post">
-            <!-- check out tumblr api for loading interactions -->
-            <div class="post-tag">
-               <div class="post-rect">{NoteCount} NOTES</div>
-               <div class="post-tri"></div>
+            <div id="buttons-about-me-container">
+                <div id="buttons-container">
+                    <div class="rect-button">
+                        <div class="rect-button-label">ABOUT</div>
+                        <div class="rect-button-inner"></div>
+                        <div class=""></div>
+                    </div>
+                    <div class="rect-button">
+                        <div class="rect-button-label">TAGS</div>
+                        <div class="rect-button-inner"></div>
+                        <div class=""></div>
+                    </div>
+                    <div class="rect-button">
+                        <div class="rect-button-label">REQUESTS</div>
+                        <div class="rect-button-inner"></div>
+                        <div class=""></div>
+                    </div>
+                    <div class="rect-button">
+                        <div class="rect-button-label">FAQ</div>
+                        <div class="rect-button-inner"></div>
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div id="about-me-container">
+                </div>
             </div>
-            <div class="post-body">
-                <div class="post-text">
-                    {block:Title}
+        </div>
+        <div id="post-sidebar">
+            {block:Posts}
+            {block:Text}
+            <div class="post">
+                <!-- check out tumblr api for loading interactions -->
+                <div class="post-tag">
+                    <div class="post-rect">{NoteCount} NOTES</div>
+                    <div class="post-tri"></div>
+                </div>
+                <div class="post-body">
+                    <div class="post-text">
+                        {block:Title}
                         <h3><a href="{Permalink}">{Title}</a></h3>
-                    {/block:Title}
-                    
-                    {Body}
-                </div></div>
-         </div>
-        {/block:Text}
-         
-
-        {block:Photo}
-        <div class="post">
-            <!-- check out tumblr api for loading interactions -->
-            <div class="post-tag">
-               <div class="post-rect">{NoteCount} NOTES</div>
-               <div class="post-tri"></div>
+                        {/block:Title}
+                        {Body}
+                    </div>
+                </div>
             </div>
-            <div class="post-body">
-                <div class="post-text">
-                    {block:Title}
+            {/block:Text}
+            {block:Photo}
+            <div class="post">
+                <!-- check out tumblr api for loading interactions -->
+                <div class="post-tag">
+                    <div class="post-rect">{NoteCount} NOTES</div>
+                    <div class="post-tri"></div>
+                </div>
+                <div class="post-body">
+                    <div class="post-text">
+                        {block:Title}
                         <h3><a href="{Permalink}">{Title}</a></h3>
-                    {/block:Title}
-                    
-
-                    
-                </div>
-                <div class="post-img">
-                    {Body}
+                        {/block:Title}
+                    </div>
+                    <div class="post-img">
+                        {Body}
+                    </div>
                 </div>
             </div>
-         </div>
-        {/block:Photo}
-
-         {block:Photoset}
-        <div class="post">
-            <!-- check out tumblr api for loading interactions -->
-            <div class="post-tag">
-               <div class="post-rect">{NoteCount} NOTES</div>
-               <div class="post-tri"></div>
-            </div>
-            <div class="post-body">
-                <div class="post-text">
-                    {block:Title}
+            {/block:Photo}
+            {block:Photoset}
+            <div class="post">
+                <!-- check out tumblr api for loading interactions -->
+                <div class="post-tag">
+                    <div class="post-rect">{NoteCount} NOTES</div>
+                    <div class="post-tri"></div>
+                </div>
+                <div class="post-body">
+                    <div class="post-text">
+                        {block:Title}
                         <h3><a href="{Permalink}">{Title}</a></h3>
-                    {/block:Title}
-                    
-                    {Body}
+                        {/block:Title}
+                        {Body}
+                    </div>
+                    <div class="photoset">
+                        {Photoset}
+                    </div>
+                    <!-- Original Post -->
                 </div>
-                <div class="photoset">
-                    {Photoset}
-                </div>
-                <!-- Original Post -->
-                 
             </div>
-         </div>
-        {/block:Photoset}
-
-        {/block:Posts}
-      </div>
-   </div>
-   </div>
-   <!-- General page effects section -->
-   <!-- <div id="page-color-base"></div> -->
-   <div id="crt-background"></div>
-   <div id="noise-map"></div>
-   <div>
-      <div id="crt-color-base"></div>
-      <div class="crt-background-static"></div>
-   </div>
+            {/block:Photoset}
+            {/block:Posts}
+        </div>
+    </div>
+    </div>
+    <!-- General page effects section -->
+    <!-- <div id="page-color-base"></div> -->
+    <div id="crt-background"></div>
+    <div id="noise-map"></div>
+    <div>
+        <div id="crt-color-base"></div>
+        <div class="crt-background-static"></div>
+    </div>
 </body>
