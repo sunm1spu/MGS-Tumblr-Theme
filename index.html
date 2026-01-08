@@ -74,7 +74,9 @@
                 <div class="post-misc-bar">
                     {block:HasTags}
                     <div class="post-tag-list">
+                        {block:Tags}
                         <a href="{TagURL}">{Tag}</a>
+                        {/block:Tags}
                     </div>
                     {/block:HasTags}
                     <div class="interaction-buttons">
