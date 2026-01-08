@@ -71,7 +71,31 @@
          </div>
         {/block:Text}
          
-         {/block:Posts}
+
+        {block:Photo}
+        <div class="post">
+            <!-- check out tumblr api for loading interactions -->
+            <div class="post-tag">
+               <div class="post-rect">{NoteCount} NOTES</div>
+               <div class="post-tri"></div>
+            </div>
+            <div class="post-body">
+                <div class="post-text">
+                    {block:Title}
+                        <h3><a href="{Permalink}">{Title}</a></h3>
+                    {/block:Title}
+                    
+
+                    
+                </div>
+                <div class="post-img">
+                    {Body}
+                </div>
+            </div>
+         </div>
+        {/block:Photo}
+
+        {/block:Posts}
       </div>
    </div>
    </div>
