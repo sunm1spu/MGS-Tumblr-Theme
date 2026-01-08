@@ -235,6 +235,7 @@ body {
 }
 /* all imgs within a post */
 .post img {
+    padding: 5vh;
     margin-bottom: 20%;
     position: relative;
     z-index: 5;
