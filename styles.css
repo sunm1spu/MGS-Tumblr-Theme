@@ -199,6 +199,8 @@ body {
     top: 6vh;
     left: 40vw;
     z-index: 6;
+
+    cursor: pointer;
 }
 
 #post-sidebar {
