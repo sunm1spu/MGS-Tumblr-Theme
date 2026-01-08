@@ -257,6 +257,7 @@ img .post {
     height:30vh;
     width:50vh;
     overflow-y: hidden;
+    margin-bottom: 10vh;
 }
 
 #mgs-logo{
