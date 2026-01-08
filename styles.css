@@ -177,7 +177,7 @@ body {
 }
 
 #searchbar-textbox {
-    
+    color: white;
     position: relative;
     background-color: rgb(29, 68, 24);
     box-shadow: 0 0 0 1vh black;
@@ -288,7 +288,6 @@ img .post {
     position: relative;
     height:100vh;
     width:50vh;
-    overflow-y: hidden;
     margin-bottom: 10vh;
 }
 
