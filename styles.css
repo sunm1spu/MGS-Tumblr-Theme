@@ -200,6 +200,8 @@ body {
     left: 40vw;
     z-index: 6;
 
+    font-size:3vh;
+
     cursor: pointer;
 }
 
