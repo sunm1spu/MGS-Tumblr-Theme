@@ -262,7 +262,7 @@ body {
 
 
 .post-body {
-    position: absolute;
+    position: relative;
     top: 5%;
     padding-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
