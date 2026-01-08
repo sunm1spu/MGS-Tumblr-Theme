@@ -71,9 +71,17 @@
                         {Body}
                     </div>
                 
-                <div class="interaction-buttons">
-                    {LikeButton}{ReblogButton}
+                <div class="post-misc-bar">
+                    {block:HasTags}
+                    <div class="post-tag-list">
+                        <a href="{TagURL}">{Tag}</a>
+                    </div>
+                    {/block:HasTags}
+                    <div class="interaction-buttons">
+                        {LikeButton color="yellow"}{ReblogButton="yellow"}
+                    </div>      
                 </div>
+                
                 
                 </div>
             </div>

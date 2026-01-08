@@ -209,6 +209,18 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.post-misc-bar {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.post-tag-list {
+    display:flex;
+    flex-direction:row;
 }
 
 #post-sidebar {
