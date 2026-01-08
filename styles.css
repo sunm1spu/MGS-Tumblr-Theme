@@ -28,7 +28,6 @@ body {
     flex-direction: row;
     justify-content: center;
     height: 200vh;
-    
 
 }
 
@@ -177,6 +176,7 @@ body {
 }
 
 #post-sidebar {
+    margin-left: 10vh;
     overflow-y: auto;
     position: relative;
 }
