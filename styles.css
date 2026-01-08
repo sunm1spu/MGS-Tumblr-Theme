@@ -292,6 +292,10 @@ body {
     width:50vh;
     margin-bottom: 10vh;
 }
+.post p {
+    position: relative;
+    z-index: 5;
+}
 
 #mgs-logo{
     display:flex;
