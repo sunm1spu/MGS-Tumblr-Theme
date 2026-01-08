@@ -201,6 +201,11 @@ body {
 .post-text {
     z-index: 5;
 }
+/* all imgs within a post */
+img .post {
+    height: 20vh;
+    margin-bottom: 20%;
+}
 
 .post-img {
     width: 100%;
