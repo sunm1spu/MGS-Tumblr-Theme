@@ -85,15 +85,17 @@ body {
     justify-content:row;
 }
 .rect-button {
-    background-color: rgb(12 65 32);
+    background-color: rgba(12, 65, 32, 0.6);
     height: 5vh;
     width: 15vh;
     margin-bottom: 5vh;
-    position: relative
+    position: relative;
+
+    cursor: pointer;
 }
 
 .rect-button:hover {
-    background-color: rgba(105, 160, 122);
+    background-color: rgba(105, 160, 122, 0.6);
 }
 
 .rect-button:hover .rect-button-inner{
