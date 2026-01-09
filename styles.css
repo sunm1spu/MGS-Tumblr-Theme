@@ -330,7 +330,10 @@ body {
 .like_button {
     height:2vh;
     width:2vh;
-    margin-right: 15%;
+}
+
+.reblog_button {
+    margin-left: 15%;
 }
 
 a {
