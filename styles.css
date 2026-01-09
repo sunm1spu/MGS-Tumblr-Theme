@@ -327,7 +327,7 @@ body {
     z-index: 5;
 }
 
-.like_button svg{
+#like svg{
     height:2vh;
     width:2vh;
 
