@@ -333,6 +333,14 @@ body {
     width:2vh;
 }
 
+a {
+    color:inherit;
+}
+
+.tag {
+    margin-right: 1vh;
+}
+
 #mgs-logo{
     display:flex;
     margin: auto;
