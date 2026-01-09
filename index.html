@@ -56,8 +56,10 @@
         </div>
         <div id="post-sidebar">
             {block:Posts}
+
+            {block:NotReblog}
             {block:Text}
-            <div class="post">
+            <div class="post NPF-text-post">
                 <!-- check out tumblr api for loading interactions -->
                 <div class="post-tag">
                     <div class="post-rect">{NoteCount} NOTES</div>
@@ -91,7 +93,7 @@
             {/block:Text}
 
             {block:Photo}
-            <div class="post">
+            <div class="post photo-post">
                 <!-- check out tumblr api for loading interactions -->
                 <div class="post-tag">
                     <div class="post-rect">{NoteCount} NOTES</div>
@@ -113,7 +115,7 @@
             </div>
             {/block:Photo}
             {block:Photoset}
-            <div class="post">
+            <div class="post photoset-post">
                 <!-- check out tumblr api for loading interactions -->
                 <div class="post-tag">
                     <div class="post-rect">{NoteCount} NOTES</div>
@@ -136,6 +138,47 @@
                 </div>
             </div>
             {/block:Photoset}
+            
+            {/block:NotReblog}
+
+            {block:RebloggedFrom}
+            <div class="post reblogged-from-post">
+                <!-- check out tumblr api for loading interactions -->
+                <div class="post-tag">
+                    <div class="post-rect">{NoteCount} NOTES</div>
+                    <div class="post-tri"></div>
+                </div>
+                <div class="post-body">
+                    <div class="post-text">
+                        <h3><a href="{ReblogParentURL}">{ReblogParentTitle}</a></h3>
+                        <h3><a href="{Permalink}">{Title}</a></h3>
+                        
+                        {block:Title}
+                        <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+                        {Body}
+                    </div>
+                
+                <div class="post-misc-bar">
+                    {block:HasTags}
+                    <div class="post-tag-list">
+                        {block:Tags}
+                        <a class="tag" href="{TagURL}">#{Tag}</a>
+                        {/block:Tags}
+                    </div>
+                    {/block:HasTags}
+                    <div class="interaction-buttons">
+                        {LikeButton color="yellow"}
+                        {ReblogButton color="yellow"}
+                    </div>      
+                </div>
+                
+                
+                </div>
+            </div>
+            {/block:RebloggedFrom}
+
+
             {/block:Posts}
         </div>
     </div>
