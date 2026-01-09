@@ -209,7 +209,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
+    width: 15%;
 }
 
 .post-misc-bar {
@@ -329,6 +330,7 @@ body {
 .like_button {
     height:2vh;
     width:2vh;
+    margin-right: 15%;
 }
 
 a {
