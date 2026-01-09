@@ -345,6 +345,14 @@ a {
     color:inherit;
 }
 
+a:hover {
+    text-shadow: 0.2vh 0vh 
+        rgb(252, 255, 82), 
+        0.4vh 0vh rgb(255 37 37), 
+        -0.2vh -0vh rgb(104, 180, 255), 
+        -0.4vh -0vh rgb(22, 18, 255);
+}
+
 .tag {
     margin-right: 1vh;
 }
