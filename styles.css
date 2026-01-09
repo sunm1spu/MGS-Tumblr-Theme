@@ -330,6 +330,9 @@ body {
 .like_button {
     height:2vh;
     width:2vh;
+
+    fill: #efdc45;
+    background-color: transparent;
 }
 
 .reblog_button {
