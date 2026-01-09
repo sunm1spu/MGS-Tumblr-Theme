@@ -355,6 +355,9 @@ a:hover {
 
 .tag {
     margin-right: 1vh;
+    position: relavtive;
+    z-index: 3;
+    color:aquamarine;
 }
 
 .post p {
