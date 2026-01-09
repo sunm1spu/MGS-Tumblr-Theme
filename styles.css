@@ -328,6 +328,11 @@ body {
     z-index: 5;
 }
 
+.like_button {
+    height:2vh;
+    width:2vh;
+}
+
 #mgs-logo{
     display:flex;
     margin: auto;
