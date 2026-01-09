@@ -303,7 +303,6 @@ body {
     justify-content: flex-end; */
     flex-direction:column;
     padding-bottom: 5%;
-    height: 80%;
 }
 
 .post-rect, .post-body, .post-tri{
