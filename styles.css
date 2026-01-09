@@ -235,7 +235,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #001802);
+    background-color: rgba(255, 255, 255, 0.1);
     
 }
 
