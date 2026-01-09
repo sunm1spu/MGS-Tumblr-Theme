@@ -331,7 +331,7 @@ body {
     height:2vh;
     width:2vh;
 
-    fill: #efdc45;
+    fill: #efdc45 !important;
     background-color: transparent;
 }
 
