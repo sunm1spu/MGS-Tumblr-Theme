@@ -109,6 +109,12 @@ body {
     /* background-color: rgb(252, 252, 251); */
     z-index: 3;
     /* filter: drop-shadow(0 0 15px rgb(255, 255, 255)); */ 
+    
+     -webkit-animation: buttonscan 0.01s linear 0.2s infinite;
+}
+
+.rect-button:hover .rect-button-inner::after {
+     -webkit-animation: buttonscan 0.15s linear 0.2s infinite;
 }
 /* 
 .rect-button-inner::before{
@@ -238,7 +244,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.1);
+    /* hiding sidebar bg, instead brightening up post frame */
+    background-color: rgba(255, 255, 255, 0);
     
 }
 
@@ -308,7 +315,8 @@ body {
 }
 
 .post-rect, .post-body, .post-tri{
-    background-color: rgb(7, 23, 26);
+    /* pre brightened color: rgb(7, 23, 26) */
+    background-color: rgb(14, 22, 22);
     color: white;
 }
 
@@ -606,4 +614,22 @@ a:hover {
         align-self:center;
         filter: contrast(100%) saturate(100%);
     }
+}
+
+@-webkit-keyframes buttonscan {
+
+
+     1% {
+      clip-path: rect(1% 120% 100px 0px round 0%);
+    }
+
+     50% {
+      clip-path: rect(1% 120% 100px 50% round 0%);
+    }
+
+    100% {
+      clip-path: rect(1% 120% 100px 100% round 0%);
+    }
+    /* wrong direction lmao */
+    /* top-down offset, height, width, left-right offset  */
 }
