@@ -66,7 +66,6 @@ body {
 
 #profile-pic {
     position: relative;
-    height:25vh;
     width: auto;
     /* z-index: 3; */
     /* this is so sad but it isn't possible */
@@ -76,8 +75,12 @@ body {
     -webkit-animation: turnon 0.5s linear 0s forwards;
 }
 
+#profile-pic, #codec-memory {
+    height:20vh;
+}
+
 #codec-memory {
-    height: 25vh;
+    
 }
 
 #pfp-codec-container {
@@ -86,8 +89,8 @@ body {
 }
 .rect-button {
     background-color: rgba(12, 65, 32, 0.4);
-    height: 5vh;
-    width: 15vh;
+    height: 4vh;
+    width: 12vh;
     margin-bottom: 5vh;
     position: relative;
 
@@ -188,11 +191,11 @@ body {
     color: white;
     position: relative;
     background-color: rgb(29, 68, 24);
-    box-shadow: 0 0 0 1vh black;
+    box-shadow: 0 0 0 0.8vh black;
     border: none;
 
-    height: 3vh;
-    width: 25vw;
+    height: 2.5vh;
+    width: 19vw;
     z-index: 5;
 }
 
@@ -202,13 +205,13 @@ body {
     color:white;
     border: none;
 
-    height: 3vh;
-    width: 15vh;
+    height: 2.5vh;
+    width: 10vh;
     top: 6vh;
-    left: 40vw;
+    left: 42vw;
     z-index: 6;
 
-    font-size:3vh;
+    font-size:2vh;
 
     cursor: pointer;
 }
